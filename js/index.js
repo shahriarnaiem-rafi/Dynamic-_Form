@@ -1,4 +1,5 @@
-function  submitedData(){
+function  submitedData(event){
+    event.preventDefault();
     //to open new window
     doc=open('','','width=400px,height=300px');
 
