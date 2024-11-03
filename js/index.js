@@ -1,5 +1,4 @@
 function  submitedData(event){
-    event.preventDefault();
     //to open new window
     doc=open('','','width=400px,height=300px');
 
@@ -36,6 +35,12 @@ function  submitedData(event){
         write("Course:    "+Course);
         write("<br>");
         write("Country:    "+Country);
+        write("<br>");
+        write("<br>");
+
+        write(" <input type='button' value='close me' onclick='self.close();' style='background-color:lightgreen; color:white; padding:5px; border:none; box-shadow:2px 3px 5px blue; cursor:pointer; color:black;' >" );
+
+        write(" <input type='button' value='print' onclick='self.print();' style='background-color:lightgreen; color:white; padding:5px 10px; border:none; box-shadow:2px 3px 5px blue;  cursor:pointer; margin-left:10px; color:black;' >" );
         
 
     }
